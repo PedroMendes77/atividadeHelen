@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombo Sports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">Colombo Sports</h1>
+            <nav>
+                <a href="#about" class="text-white mx-3 text-decoration-none">Sobre o site</a>
+                <a href="#modules" class="text-white mx-3 text-decoration-none">Loja</a>
+                <a href="#contact" class="text-white mx-3 text-decoration-none">Encomendar</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero bg-light text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold">Camisetas, Itens, e Muito mais!</h2>
+            <p class="lead">Aqui você encontra os melhores produtos esportivos de Colombo!!</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Encomendar um Item</a>
+        </div>
+    </section>
+
+    <!-- Sobre o Curso -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">Colombo Sports: Sua Paixão Pelo Esporte Começa Aqui!</h2>
+                    <p>Na Colombo Sports, acreditamos que cada desafio superado e cada nova meta alcançada merecem o melhor equipamento. Encomende uma camisa da nossa coleção e descubra peças que combinam design moderno, materiais de alta qualidade e inovação pensada para o seu corpo em movimento.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./assets/img_colomboSports.png" alt="Roupas e itens esportivos" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos do Curso (Carrossel) -->
+    <section id="modules" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold">Aqui temos o que você está procurando!</h2>
+            <div id="courseCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestuário de Alto Desempenho</h5>
+                                <p class="card-text">Sinta a leveza e o conforto inigualáveis. Nossas peças Dry-Fit utilizam tecnologia de ponta para gerenciamento de umidade, absorvendo e evaporando o suor rapidamente. Isso mantém seu corpo seco e fresco mesmo nos treinos mais intensos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Calçados Específicos</h5>
+                                <p class="card-text">Sinta a leveza e o conforto inigualáveis. Nossas peças Dry-Fit utilizam tecnologia de ponta para gerenciamento de umidade, absorvendo e evaporando o suor rapidamente. Isso mantém seu corpo seco e fresco mesmo nos treinos mais intensos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Chuteiras</h5>
+                                <p class="card-text">Domine o campo com chuteiras que oferecem tração agressiva e controle de bola superior. Com cabedais leves e resistentes que se moldam ao pé e solados projetados para cada tipo de gramado (natural, sintético ou society), garantimos a agilidade e precisão que o seu jogo exige.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Acessórios Essenciais</h5>
+                                <p class="card-text">Garrafas: Mantenha-se hidratado com nossas garrafas térmicas e convencionais. Feitas com materiais resistentes, livres de BPA e com designs ergonômicos, são ideais para conservar a temperatura de sua bebida por mais tempo, seja na academia ou na trilha.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Meias para Esportes</h5>
+                                <p class="card-text">Não subestime o poder de uma boa meia! Nossas meias esportivas contam com suporte de compressão em áreas estratégicas, tecnologia anti-bolhas e ventilação. Elas garantem o ajuste perfeito dentro do tênis, evitando o deslizamento e otimizando a circulação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Itens de Academia</h5>
+                                <p class="card-text">Monte seu treino perfeito com nossa linha de acessórios. De luvas com proteção e grips antiderrapantes a faixas de resistência e colchonetes de alta durabilidade, oferecemos a segurança e a funcionalidade que você precisa para maximizar cada repetição e alcançar seus objetivos de fitness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold">Entre em Contato</h2>
+            <p class="text-center">Preencha o formulário abaixo para encomendar ou tirar dúvidas.</p>
+
+            <form id="whatsappForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Seu Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Seu E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Sua Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy;by Carickas 2025 SENAI. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // cria um evento a partir do clique no botão, que tem o type submit
+        document.getElementById('whatsappForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            
+            const telefone = '5541999009999';
+
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('message').value;
+
+            const text = `Olá \nMeu nome é ${nome}, meu email é: ${email}.\nMenssagem: ${mensagem}`;
+
+            const encodedText = encodeURIComponent(text);
+
+            const whatsappURL = `https://wa.me/${telefone}?text=${encodedText}`;
+
+            window.open(whatsappURL, "_blank");
+        })
+    </script>
+</body>
+</html>
