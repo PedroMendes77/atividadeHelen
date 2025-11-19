@@ -1,75 +1,115 @@
+/* Importação da Fonte (Já está no HTML, mas incluída aqui por clareza) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variáveis de Cores */
+:root {
+    --primary-color: #007bff; /* Azul vibrante (pode ser trocado por verde ou vermelho) */
+    --secondary-color: #343a40; /* Cinza escuro para texto/fundo */
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    color: var(--secondary-color);
 }
 
-header{
-    background: linear-gradient(135deg, #676a6d, #73777a);
-    border-bottom: #fff solid 1.5px;
+/* --- Cabeçalho --- */
+header {
+    background-color: var(--dark-bg);
+    border-bottom: 3px solid var(--primary-color);
 }
 
+.logo {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link-custom {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: var(--primary-color);
+}
+
+/* --- Seção de Destaque (Hero) --- */
 .hero {
-    background: linear-gradient(135deg, #676a6d, #73777a);
-    color: #fff;
+    background: url('assets/hero_bg.jpg') no-repeat center center/cover; /* Adicione uma imagem de fundo aqui */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply; /* Escurece a imagem de fundo */
+    color: #ffffff;
+    padding: 80px 0;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.hero p {
-    font-size: 1.2rem;
+/* Efeito de Pulsar no Botão Principal */
+.pulse-effect {
+    animation: pulse 2s infinite;
 }
 
-footer {
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 123, 255, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
+}
+
+/* --- Botões em Geral --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Tom mais escuro no hover */
+    border-color: #0056b3;
+}
+
+/* --- Cards de Produto --- */
+.bg-light-custom {
+    background-color: var(--light-bg);
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.product-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* --- Seção de Contato --- */
+.bg-dark-custom {
+    background-color: var(--secondary-color);
+}
+
+/* --- Rodapé --- */
+.bg-dark-footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
     font-size: 0.9rem;
 }
-
-/* Cards no carrossel */
-.card {
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.card-text {
-    font-size: 1rem;
-}
-
-/* Módulo carrossel */
-.carousel-inner .carousel-item {
-    text-align: center;
-}
-
-.carousel-control-prev, .carousel-control-next {
-    color: #b6c0ca;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #b6c0ca;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .card-title {
-        font-size: 1.125rem;
-    }
-
-    .card-text {
-        font-size: 0.875rem;
-    }
-}
-
-
